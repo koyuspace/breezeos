@@ -1,0 +1,4 @@
+disk_images/breeze*
+programs/*.bin
+source/kernel.bin
+source/bootload/bootload.bin

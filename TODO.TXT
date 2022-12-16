@@ -1,0 +1,13 @@
+What we might work on:
+- Adding docs
+- Refining some code
+- Implementing more drivers
+
+What we're working:
+- Fixing some jumping mess
+- Fixing some MikeOS leftovers
+- Building actual images for you to download
+- Designing a website if we need one
+- Maybe implementing SB16 drivers (because PC speaker setup on VirtualBox is a fucking mess)
+- Fixing buildwin.bat and rely on modern win32 binaries (because arduino101 is still using Windows, what a loser)
+- Rewriting docs in Markdown
