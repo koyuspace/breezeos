@@ -383,9 +383,9 @@ get_cmd:				; Main processing loop
 	jc near reboot
 	
 
-        mov di, shutdown_string   ; 'SHUTDOWN' entered?
-        call os_string_compare
-        jc near shutdown
+	mov di, shutdown_string   ; 'SHUTDOWN' entered?
+	call os_string_compare
+	jc near shutdown
 
 	mov di, more_string	; 'MORE' entered?
 	call os_string_compare
