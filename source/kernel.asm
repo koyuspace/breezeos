@@ -610,11 +610,6 @@ shutdown:
 	int 0x15
 	shutting db 'Shutting down...', 0
 
-gui:
-	call os_clear_screen	; Clear screen
-	cmp ax, 1		; Run GUI
-	jne near os_command_line
-
 list_directory:
 	mov cx,	0			; Counter
 
@@ -900,7 +895,7 @@ ren_file:
 	reboot_string 	db 'REBOOT', 0
 	shutdown_string db 'SHUTDOWN', 0
 	more_string 	db 'MORE', 0
-	more_text 		db 'More commands: HELP, TIME, DATE, VER, GUI, SHUTDOWN, REBOOT', 0
+	more_text 		db 'More commands: HELP, TIME, DATE, VER, SHUTDOWN, REBOOT', 0
 
 	kern_file_string	db 'KERNEL', 0
 	kern_warn_msg		db 'Cannot execute kernel file!', 13, 10, 0
